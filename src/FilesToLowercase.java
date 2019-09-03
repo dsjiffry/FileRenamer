@@ -58,6 +58,7 @@ public class FilesToLowercase {
         {
             String filename = FilesToLowercase.class.getProtectionDomain().getCodeSource().getLocation().toString().substring(6);
             try {
+                filename = filename.replaceAll("%20"," ");
                 Runtime.getRuntime().exec(new String[]{"cmd", "/c", "start", "cmd", "/k", "java -jar \"" + filename + "\""});
             } catch (IOException e) {
                 e.printStackTrace();
