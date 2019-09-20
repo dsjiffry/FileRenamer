@@ -37,11 +37,12 @@ public class FilesToLowercase {
         String fileName = path.getFileName().toString();
         String extension = fileName.substring(fileName.lastIndexOf('.'));
 
-        if (!fileName.equals(fileName.toLowerCase()) || fileName.contains(" "))    //Check if name has Uppercase Letters or spaces
+        if (!fileName.equals(fileName.toLowerCase()) || fileName.contains(" ") || fileName.contains("-"))    //Check if name has Uppercase Letters, spaces or dashes
         {
             fileName = fileName.substring(0, fileName.lastIndexOf('.')); //Removing extension from filename
             String newname = fileName.toLowerCase().trim();    //Renaming file to have lowercase letters only
             newname = newname.replaceAll(" ","_");  //Replacing spaces with underscore
+            newname = newname.replaceAll("-","_");  //Replacing dashes with underscore
             newname = newname.concat(extension);    //adding the extension back
             try {
                 Files.move(path, path.resolveSibling(newname), ATOMIC_MOVE);
