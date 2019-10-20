@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="filestolowercase:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/filestolowercase_jar</output-path>
+    <root id="archive" name="filestolowercase.jar">
+      <element id="module-output" name="filestolowercase" />
+    </root>
+  </artifact>
+</component>
