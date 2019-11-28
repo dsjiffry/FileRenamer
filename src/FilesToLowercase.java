@@ -25,6 +25,7 @@ public class FilesToLowercase {
                 e.printStackTrace();
             }
         }
+        sc.close();
     }
 
     private void forEveryFile(Path path)
