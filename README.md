@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/dsjiffry/FileRenamer.svg?branch=master)](https://travis-ci.com/dsjiffry/FileRenamer)
+
 # Android Studio Resource Renamer
 In Android Studio our resources cannot have capital letters or spaces in their names. This program will recursively make all file names lowercase and replace spaces/dashes with underscores.
 
