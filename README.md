@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.com/dsjiffry/FileRenamer.svg?branch=master)](https://travis-ci.com/dsjiffry/FileRenamer)
 [![Java CI with Maven](https://github.com/dsjiffry/FileRenamer/workflows/Java%20CI%20with%20Maven/badge.svg?branch=master)](https://github.com/dsjiffry/FileRenamer/actions?query=workflow%3A%22Java+CI+with+Maven%22)
 
 # Android Studio Resource Renamer
